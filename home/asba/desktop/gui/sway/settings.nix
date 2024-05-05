@@ -26,6 +26,7 @@
         highlighthigh = "#524f67";
       };
     in {
+      defaultWorkspace = "workspace number 1";
       terminal = "${config.programs.kitty.package}/bin/kitty --single-instance";
       menu = "${config.programs.rofi.package}/bin/rofi -show drun";
       inherit modifier;
@@ -45,31 +46,31 @@
       colors = {
         focusedInactive = {
           background = "${rosePine.base}";
-  	text = "${rosePine.text}";
-  	border = "${rosePine.surface}";
-  	indicator = "${rosePine.subtle}";
-  	childBorder = "${rosePine.surface}";
-        };
+  	  text = "${rosePine.text}";
+  	  border = "${rosePine.surface}";
+  	  indicator = "${rosePine.subtle}";
+  	  childBorder = "${rosePine.surface}";
+          };
         focused = {
           background = "${rosePine.base}";
-  	text = "${rosePine.text}";
-  	border = "${rosePine.rose}";
-  	indicator = "${rosePine.rose}";
-  	childBorder = "${rosePine.rose}";
+  	  text = "${rosePine.text}";
+  	  border = "${rosePine.rose}";
+  	  indicator = "${rosePine.rose}";
+  	  childBorder = "${rosePine.rose}";
         };
         unfocused = {
           background = "${rosePine.base}";
-  	text = "${rosePine.text}";
-  	border = "${rosePine.overlay}";
-  	indicator = "${rosePine.subtle}";
-  	childBorder = "${rosePine.overlay}";
+  	  text = "${rosePine.text}";
+  	  border = "${rosePine.overlay}";
+  	  indicator = "${rosePine.subtle}";
+  	  childBorder = "${rosePine.overlay}";
         };
         urgent = {
-  	background = "${rosePine.base}";
-  	indicator = "${rosePine.love}";
-  	border = "${rosePine.love}";
-  	childBorder = "${rosePine.love}"; 
-  	text = "${rosePine.text}";
+  	  background = "${rosePine.base}";
+  	  indicator = "${rosePine.love}";
+  	  border = "${rosePine.love}";
+  	  childBorder = "${rosePine.love}"; 
+  	  text = "${rosePine.text}";
         };
       };
     };

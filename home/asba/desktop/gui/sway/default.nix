@@ -16,10 +16,16 @@
     kooha
   ];
 
+  services = {
+    udiskie.enable = true;
+    network-manager-applet.enable = true;
+  };
+
   wayland.windowManager.sway = {
     enable = true;
     checkConfig = false;
     xwayland = true;
-    package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped; 
+    # package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped; 
+    package = pkgs.swayfx; 
   };
 }
