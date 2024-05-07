@@ -1,12 +1,11 @@
 { ... }: {
   imports = [
     ./fonts.nix
-    ./rofi
+    ./rofi.nix
     ./pavucontrol.nix
     ./kitty.nix
     ./discord.nix
     ./waybar.nix
+    ./xdg.nix
   ];
-
-  xdg.mimeApps.enable = true;
 }

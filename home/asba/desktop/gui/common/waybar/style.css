@@ -1,9 +1,7 @@
-@import "./rose-pine.css";
-
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrainsMono NFM ExtraBold";
+  font-family: "RecMonoLinear Nerd Font Mono";
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
@@ -33,7 +31,7 @@ tooltip {
 }
 
 #workspaces button.focused {
-  color: @subtle;
+  color: @base;
   background: @love;
   border-radius: 8px;
 }
@@ -68,41 +66,33 @@ tooltip {
   margin: 3px 0px;
   margin-top: 15px;
   border: 2px solid @pine;
+  border-radius: 8px;
 }
 
 #memory {
   color: #3e8fb0;
-  border-left: 0px;
-  border-right: 0px;
 }
 
 #temperature {
   color: @gold;
-  border-left: 0px;
-  border-right: 0px;
 }
 
 #temperature.critical {
-  border-left: 0px;
-  border-right: 0px;
   color: @love;
 }
 
 #backlight {
   color: @text;
-  border-radius: 0px 8px 8px 0px;
   margin-right: 20px;
 }
 
 #tray {
-  border-radius: 8px;
   margin-left: 10px;
   margin-right: 0px;
 }
 
 #workspaces {
   background: @base;
-  border-radius: 8px;
   margin-left: 10px;
   padding-right: 0px;
   padding-left: 5px;
@@ -110,18 +100,16 @@ tooltip {
 
 #custom-power_profile {
   color: @foam;
-  border-left: 0px;
-  border-right: 0px;
 }
 
 #window {
-  border-radius: 8px;
   margin-left: 60px;
   margin-right: 60px;
 }
 
 window#waybar.empty {
   background-color: transparent;
+  border: 0px
 }
 
 window#waybar.empty #window {
@@ -135,25 +123,18 @@ window#waybar.empty #window {
 #clock {
   color: @text;
   background: @pine;
-  border-radius: 8px;
   margin-left: 20px;
 }
 
 #network {
   color: @love;
-  border-radius: 8px 0px 0px 8px;
-  border-right: 0px;
 }
 
 #pulseaudio {
   color: @iris;
-  border-radius: 8px 0px 0px 8px;
-  border-right: 0px;
 }
 
 #battery {
   color: @foam;
-  border-radius: 0 8px 8px 0;
   margin-right: 10px;
-  border-left: 0px;
 }

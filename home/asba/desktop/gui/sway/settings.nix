@@ -22,8 +22,6 @@
         foam = "#9ccfd8";
         iris = "#c4a7e7";
         highlightlow = "#21202e";
-        highlightmed = "#403d52";
-        highlighthigh = "#524f67";
       };
     in {
       defaultWorkspace = "workspace number 1";
@@ -41,8 +39,11 @@
         xkb_layout = "gb";
       };
       output.eDP-1 = {
-        bg = "${../../../wallpapers/AutumnLandscape.png} fill";
+        bg = "${../../../wallpapers/SignsSignsSigns.jpg} fill";
       };
+      bars = [{
+        command = "waybar";
+      }];
       colors = {
         focusedInactive = {
           background = "${rosePine.base}";

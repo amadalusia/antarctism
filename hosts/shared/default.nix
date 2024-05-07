@@ -32,6 +32,10 @@
 
   services.libinput.enable = true;
 
+  services.dbus.enable = true;
+
+  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+
   programs.zsh = {
     enable = true;
   };
