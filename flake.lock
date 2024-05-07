@@ -106,15 +106,15 @@
         "scenefx": "scenefx"
       },
       "locked": {
-        "lastModified": 1714534729,
-        "narHash": "sha256-kwztZUS7roNMya4z/hgZ1gDxUuCQNRMKL0mvxR3CCi4=",
-        "owner": "willpower3309",
+        "lastModified": 1714859050,
+        "narHash": "sha256-UOSzCx99Ln8vAF8IA67toAzKmhCccagqVCW5EkUNfhw=",
+        "owner": "balkenix",
         "repo": "swayfx",
-        "rev": "e45b420ccc888f4d14782f233cf037941a2425db",
+        "rev": "3e1a8be1aced39eb31bf3d6026aac4b692b251ce",
         "type": "github"
       },
       "original": {
-        "owner": "willpower3309",
+        "owner": "balkenix",
         "repo": "swayfx",
         "type": "github"
       }

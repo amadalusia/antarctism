@@ -11,7 +11,7 @@
       name = "RecMonoLinear Nerd Font Propo";
     };
     settings = {
-      window_margin_width = 11;
+      window_margin_width = 15;
     };
   };
 }

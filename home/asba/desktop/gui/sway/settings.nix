@@ -41,7 +41,7 @@
         xkb_layout = "gb";
       };
       output.eDP-1 = {
-        bg = "${../../../wallpapers/CozyReading.png} fill";
+        bg = "${../../../wallpapers/AutumnLandscape.png} fill";
       };
       colors = {
         focusedInactive = {

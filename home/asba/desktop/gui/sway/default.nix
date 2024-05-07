@@ -25,7 +25,7 @@
     enable = true;
     checkConfig = false;
     xwayland = true;
-    # package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped; 
-    package = pkgs.swayfx; 
+    package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped; 
+    # package = pkgs.swayfx; 
   };
 }

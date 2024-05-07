@@ -15,7 +15,7 @@
     };
 
     swayfx = {
-      url = "github:willpower3309/swayfx";
+      url = "github:balkenix/swayfx";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
