@@ -129,7 +129,7 @@
       };
 
       "network" = {
-        format = " {signalStrength}%";
+        format = "  {signalStrength}%";
         format-ethernet = "󰈁 {ipaddr}/{cidr} ";
         tooltip = "{essid} - {ifname} via {gwaddr}";
         format-linked = " {ifname} (No IP)";
