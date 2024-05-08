@@ -114,7 +114,7 @@
 
       "temparature" = {
         thermal-zone = 1;
-        format = "TEMP {temperatureC}°C";
+        format = " {temperatureC}°C";
         critical-threshold = 80;
         format-critical = "{temperatureC}°C 󱗗";
       };
