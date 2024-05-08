@@ -91,13 +91,13 @@
         on-scroll-down = "pamixer -d 5";
         scroll-step = 5;
         format-icons = {
-          headphone = " ";
-          hands-free = " ";
-          headset = " ";
-          phone = " ";
-          portable = " ";
-          car = " ";
-          default = ["" " " " "];
+          headphone = "";
+          hands-free = "";
+          headset = "";
+          phone = "";
+          portable = "";
+          car = "";
+          default = ["" "" ""];
         };
       };
 
@@ -128,11 +128,11 @@
       };
 
       "network" = {
-        format = "{signalStrength}%  ";
-        format-ethernet = "{ipaddr}/{cidr} 󰈁";
-        tooltip = "{essid} - {ifname} via {gwaddr} ";
-        format-linked = "{ifname} (No IP) ";
-        format-disconnected = "N/A ";
+        format = " {signalStrength}%";
+        format-ethernet = "󰈁 {ipaddr}/{cidr} ";
+        tooltip = "{essid} - {ifname} via {gwaddr}";
+        format-linked = " {ifname} (No IP)";
+        format-disconnected = " N/A";
         format-alt = "{ifname}:{essid} {ipaddr}/{cidr}";
       };
     }];
