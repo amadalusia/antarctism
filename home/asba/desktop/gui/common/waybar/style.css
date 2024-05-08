@@ -22,7 +22,7 @@ tooltip {
 
 #workspaces button {
   padding: 5px;
-  color: @highlightMed;
+  color: @text;
   margin-right: 5px;
 }
 
@@ -61,7 +61,7 @@ tooltip {
 #memory,
 #backlight {
   background: @base;
-  opacity: 0.9;
+  opacity: 1.0;
   padding: 0px 10px;
   margin: 3px 0px;
   margin-top: 15px;
@@ -122,7 +122,6 @@ window#waybar.empty #window {
 
 #clock {
   color: @text;
-  background: @pine;
   margin-left: 20px;
 }
 
