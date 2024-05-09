@@ -357,7 +357,7 @@ POWERLEVEL9K_TERM_SHELL_INTEGRATION=true
   # typeset -g POWERLEVEL9K_DIR_CLASSES=()
 
   # Custom prefix.
-  # typeset -g POWERLEVEL9K_DIR_PREFIX='in '
+  typeset -g POWERLEVEL9K_DIR_PREFIX='in '
 
   #####################################[ vcs: git status ]######################################
   # Version control background colors.

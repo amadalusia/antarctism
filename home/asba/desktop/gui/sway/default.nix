@@ -19,6 +19,9 @@
   services = {
     udiskie.enable = true;
     network-manager-applet.enable = true;
+    gnome-keyring = {
+      enable = true;
+    };
   };
 
   wayland.windowManager.sway = {

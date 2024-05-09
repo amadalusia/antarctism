@@ -39,7 +39,7 @@
         xkb_layout = "gb";
       };
       output.eDP-1 = {
-        bg = "${../../../wallpapers/SignsSignsSigns.jpg} fill";
+        bg = "${../../../wallpapers/AutumnLandscape.png} fill";
       };
       bars = [{
         command = "waybar";
@@ -47,21 +47,21 @@
       colors = {
         focusedInactive = {
           background = "${rosePine.base}";
-  	  text = "${rosePine.text}";
+	  inherit (rosePine) text;
   	  border = "${rosePine.surface}";
   	  indicator = "${rosePine.subtle}";
   	  childBorder = "${rosePine.surface}";
           };
         focused = {
           background = "${rosePine.base}";
-  	  text = "${rosePine.text}";
+	  inherit (rosePine) text;
   	  border = "${rosePine.rose}";
   	  indicator = "${rosePine.rose}";
   	  childBorder = "${rosePine.rose}";
         };
         unfocused = {
           background = "${rosePine.base}";
-  	  text = "${rosePine.text}";
+	  inherit (rosePine) text;
   	  border = "${rosePine.overlay}";
   	  indicator = "${rosePine.subtle}";
   	  childBorder = "${rosePine.overlay}";
@@ -71,12 +71,15 @@
   	  indicator = "${rosePine.love}";
   	  border = "${rosePine.love}";
   	  childBorder = "${rosePine.love}"; 
-  	  text = "${rosePine.text}";
+	  inherit (rosePine) text;
         };
       };
     };
     extraConfig = ''
       corner_radius 7
+
+      shadows enable
+      shadows_blur_radius 7
     '';
   };
 }
