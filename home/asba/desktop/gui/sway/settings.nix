@@ -4,8 +4,7 @@
   lib,
   ...
 }: {
-  wayland.windowManager.sway = {
-    config = let 
+  wayland.windowManager.sway = let
       fonts = {};
       modifier = "Mod4";
       rosePine = {
@@ -22,8 +21,8 @@
         foam = "#9ccfd8";
         iris = "#c4a7e7";
         highlightlow = "#21202e";
-      };
-    in {
+      }; in {
+    config = {
       defaultWorkspace = "workspace number 1";
       terminal = "${config.programs.kitty.package}/bin/kitty --single-instance";
       menu = "${config.programs.rofi.package}/bin/rofi -show drun";
@@ -35,7 +34,7 @@
       window = {
         titlebar = false;
       };
-      input."*" = {
+      input."type:keyboard" = {
         xkb_layout = "gb";
       };
       output.eDP-1 = {
@@ -79,7 +78,8 @@
       corner_radius 7
 
       shadows enable
-      shadows_blur_radius 7
+      shadow_blur_radius 10
+      shadow_color ${rosePine.base}99
     '';
   };
 }

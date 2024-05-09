@@ -18,12 +18,18 @@
       url = "github:balkenix/swayfx";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nur = {
+      url = "github:nix-community/nur";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    disko,
+    nur,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -58,6 +64,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/pluto/configuration.nix
+	  nur.nixosModule.nur
         ];
       };
     };
