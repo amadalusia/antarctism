@@ -13,7 +13,10 @@
           enable = true;
         };
         languages = {
-          zig.enable = true;
+          zig = {
+            enable = true;
+            lsp.enable = true;
+          };
           rust.enable = true;
           clang.enable = true;
           go.enable = true;
