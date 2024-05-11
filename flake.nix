@@ -8,7 +8,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,17 +19,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nur = {
-      url = "github:nix-community/nur";
-    };
+    nur.url = "github:nix-community/nur";
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = {
     self,
     nixpkgs,
-    home-manager,
-    disko,
-    nur,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -64,7 +60,6 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/pluto/configuration.nix
-	  nur.nixosModule.nur
         ];
       };
     };

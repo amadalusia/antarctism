@@ -5,8 +5,6 @@
   ...
 }: {
   wayland.windowManager.sway = let
-      fonts = {};
-      modifier = "Mod4";
       rosePine = {
         base = "#191724";
         surface = "#1f1d2e";
@@ -26,7 +24,13 @@
       defaultWorkspace = "workspace number 1";
       terminal = "${config.programs.kitty.package}/bin/kitty --single-instance";
       menu = "${config.programs.rofi.package}/bin/rofi -show drun";
-      inherit modifier;
+      modifier = "Mod4";
+      startup = [
+        {
+	  command = "${pkgs.autotiling}/bin/autotiling";
+	  always = true;
+	}
+      ];
       gaps = {
         inner = 9;
         outer = 9;
@@ -41,6 +45,7 @@
         bg = "${../../../wallpapers/AutumnLandscape.png} fill";
       };
       bars = [{
+	position = "top";
         command = "waybar";
       }];
       colors = {
@@ -72,6 +77,12 @@
   	  childBorder = "${rosePine.love}"; 
 	  inherit (rosePine) text;
         };
+      };
+      keybindings = let
+        modifier = config.wayland.windowManager.sway.config.modifier;
+      in lib.mkOptionDefault {
+        "Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy screen";
+        "shift+Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
       };
     };
     extraConfig = ''

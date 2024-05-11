@@ -37,6 +37,8 @@
       outputs.overlays.modifications
       outputs.overlays.unstable-packages
 
+      inputs.nur.overlay
+
       # You can also add overlays exported from other flakes:
       # neovim-nightly-overlay.overlays.default
 
@@ -101,6 +103,9 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "hmb";
     users.asba = import ../../home/asba;
   };
 
@@ -111,7 +116,6 @@
     wget
     thunderbird
     htop
-    firefox
     git
   ];
 

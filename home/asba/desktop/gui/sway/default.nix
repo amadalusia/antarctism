@@ -12,6 +12,7 @@
 
   home.packages = with pkgs; [
     sway-contrib.grimshot
+    autotiling
     blueberry
     kooha
   ];
