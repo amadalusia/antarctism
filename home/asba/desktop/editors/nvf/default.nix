@@ -32,6 +32,10 @@
           ui.enable = true;
         };
 
+        ui = {
+          noice.enable = true;
+        };
+
         startPlugins = [
           "plenary-nvim"
         ];
@@ -64,6 +68,10 @@
             enable = true;
             lsp.enable = true;
           };
+        };
+
+        notify.nvim-notify = {
+          enable = true;
         };
 
         theme = {
