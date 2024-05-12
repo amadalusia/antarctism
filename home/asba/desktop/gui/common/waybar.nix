@@ -11,8 +11,6 @@
         position = "top";
         mod = "dock";
         height = 52;
-        exclusive = true;
-        passthrough = true;
         gtk-layer-shell = true;
         modules-left = ["clock" "tray" "sway/workspaces"];
         modules-center = ["sway/window"];
