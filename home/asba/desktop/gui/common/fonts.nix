@@ -1,16 +1,13 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
-    (nerdfonts.override { fonts = [
-      "Recursive"
-      "JetBrainsMono"
-      "NerdFontsSymbolsOnly"
-    ]; })
+    (nerdfonts.override {
+      fonts = [
+        "Recursive"
+        "JetBrainsMono"
+        "NerdFontsSymbolsOnly"
+      ];
+    })
   ];
 }

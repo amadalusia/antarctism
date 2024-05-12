@@ -4,7 +4,6 @@
   inputs,
   outputs,
   lib,
-  config,
   pkgs,
   ...
 }: {
@@ -97,12 +96,12 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.asba = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "audio" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "video" "audio" "networkmanager"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; };
+    extraSpecialArgs = {inherit inputs outputs;};
     useUserPackages = true;
     useGlobalPkgs = true;
     backupFileExtension = "hmb";
@@ -159,5 +158,5 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "23.11"; # Did you read the comment? 
+  system.stateVersion = "23.11"; # Did you read the comment?
 }

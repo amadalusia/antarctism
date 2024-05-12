@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: {
+_: {
   programs.eza = {
     enable = true;
     extraOptions = [

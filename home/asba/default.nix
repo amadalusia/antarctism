@@ -2,9 +2,6 @@
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   inputs,
-  outputs,
-  lib,
-  config,
   pkgs,
   ...
 }: {
@@ -21,6 +18,7 @@
     inputs.nur.hmModules.nur
 
     ./desktop/cli
+    ./desktop/editors
     ./desktop/gui/sway
   ];
 
@@ -49,19 +47,16 @@
   #   };
   # };
 
-  # currently lost on what to disable here
-
-  # TODO: Set your username
   home = {
     username = "asba";
     homeDirectory = "/home/asba";
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim.enable = true;
   home.packages = with pkgs; [
     tomato-c
     fastfetch
+    pavucontrol
   ];
 
   # Enable home-manager and git

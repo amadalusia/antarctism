@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nvf.homeManagerModules.default
   ];
@@ -7,6 +11,7 @@
     enable = true;
     settings = {
       vim = {
+        package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
         viAlias = true;
         vimAlias = true;
         lsp = {

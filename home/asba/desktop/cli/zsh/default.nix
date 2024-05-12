@@ -1,9 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}: {
+_: {
   imports = [
     ./aliases.nix
   ];
@@ -14,7 +9,7 @@
     antidote = {
       enable = true;
       plugins = [
-	"romkatv/powerlevel10k"
+        "romkatv/powerlevel10k"
         "zdharma-continuum/fast-syntax-highlighting"
       ];
     };

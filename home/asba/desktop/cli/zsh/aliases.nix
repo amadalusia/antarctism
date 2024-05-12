@@ -1,4 +1,4 @@
-{ ... }: {
+_: {
   programs.zsh = {
     shellAliases = {
       "rebuild-and-test" = "sudo nixos-rebuild test --flake ~/.dotfiles#pluto";

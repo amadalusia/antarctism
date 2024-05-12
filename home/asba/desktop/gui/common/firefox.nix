@@ -1,16 +1,10 @@
-{
-  config,
-  pkgs,
-  lib,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
     profiles.default = {
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         bitwarden
-	firefox-color
+        firefox-color
       ];
       settings = {
         "extensions.autoDisableScopes" = 0;

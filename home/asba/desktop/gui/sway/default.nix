@@ -1,8 +1,6 @@
 {
-  config,
   inputs,
   pkgs,
-  lib,
   ...
 }: {
   imports = [
@@ -16,7 +14,7 @@
     blueberry
     kooha
   ];
-  
+
   services = {
     udiskie.enable = true;
     network-manager-applet.enable = true;
@@ -29,7 +27,7 @@
     enable = true;
     checkConfig = false;
     xwayland = true;
-    package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped; 
+    package = inputs.swayfx.packages.${pkgs.system}.swayfx-unwrapped;
     systemd.enable = true;
     wrapperFeatures.gtk = true;
     extraSessionCommands = ''
