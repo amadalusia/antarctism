@@ -5,21 +5,22 @@
   ...
 }: {
   wayland.windowManager.sway = let
-      rosePine = {
-        base = "#191724";
-        surface = "#1f1d2e";
-        overlay = "#26233a";
-        muted = "#6e6a86";
-        subtle = "#908caa";
-        text = "#e0def4";
-        love = "#eb6f92";
-        gold = "#f6c177";
-        rose = "#ebbcba";
-        pine = "#31748f";
-        foam = "#9ccfd8";
-        iris = "#c4a7e7";
-        highlightlow = "#21202e";
-      }; in {
+    rosePine = {
+      base = "#191724";
+      surface = "#1f1d2e";
+      overlay = "#26233a";
+      muted = "#6e6a86";
+      subtle = "#908caa";
+      text = "#e0def4";
+      love = "#eb6f92";
+      gold = "#f6c177";
+      rose = "#ebbcba";
+      pine = "#31748f";
+      foam = "#9ccfd8";
+      iris = "#c4a7e7";
+      highlightlow = "#21202e";
+    };
+  in {
     config = {
       defaultWorkspace = "workspace number 1";
       terminal = "${config.programs.kitty.package}/bin/kitty --single-instance";
@@ -27,9 +28,9 @@
       modifier = "Mod4";
       startup = [
         {
-	  command = "${pkgs.autotiling}/bin/autotiling";
-	  always = true;
-	}
+          command = "${pkgs.autotiling}/bin/autotiling";
+          always = true;
+        }
       ];
       gaps = {
         inner = 9;
@@ -42,48 +43,51 @@
         xkb_layout = "gb";
       };
       output.eDP-1 = {
-        bg = "${../../../wallpapers/AutumnLandscape.png} fill";
+        bg = "${../../../wallpapers/such-sweet-poetry_rosepine.png} fill";
       };
-      bars = [{
-	position = "top";
-        command = "waybar";
-      }];
+      bars = [
+        {
+          position = "top";
+          command = "waybar";
+        }
+      ];
       colors = {
         focusedInactive = {
           background = "${rosePine.base}";
-	  inherit (rosePine) text;
-  	  border = "${rosePine.surface}";
-  	  indicator = "${rosePine.subtle}";
-  	  childBorder = "${rosePine.surface}";
-          };
+          inherit (rosePine) text;
+          border = "${rosePine.surface}";
+          indicator = "${rosePine.subtle}";
+          childBorder = "${rosePine.surface}";
+        };
         focused = {
           background = "${rosePine.base}";
-	  inherit (rosePine) text;
-  	  border = "${rosePine.rose}";
-  	  indicator = "${rosePine.rose}";
-  	  childBorder = "${rosePine.rose}";
+          inherit (rosePine) text;
+          border = "${rosePine.rose}";
+          indicator = "${rosePine.rose}";
+          childBorder = "${rosePine.rose}";
         };
         unfocused = {
           background = "${rosePine.base}";
-	  inherit (rosePine) text;
-  	  border = "${rosePine.overlay}";
-  	  indicator = "${rosePine.subtle}";
-  	  childBorder = "${rosePine.overlay}";
+          inherit (rosePine) text;
+          border = "${rosePine.overlay}";
+          indicator = "${rosePine.subtle}";
+          childBorder = "${rosePine.overlay}";
         };
         urgent = {
-  	  background = "${rosePine.base}";
-  	  indicator = "${rosePine.love}";
-  	  border = "${rosePine.love}";
-  	  childBorder = "${rosePine.love}"; 
-	  inherit (rosePine) text;
+          background = "${rosePine.base}";
+          indicator = "${rosePine.love}";
+          border = "${rosePine.love}";
+          childBorder = "${rosePine.love}";
+          inherit (rosePine) text;
         };
       };
       keybindings = let
         modifier = config.wayland.windowManager.sway.config.modifier;
-      in lib.mkOptionDefault {
-        "Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy screen";
-        "shift+Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
-      };
+      in
+        lib.mkOptionDefault {
+          "Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy screen";
+          "shift+Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
+        };
     };
     extraConfig = ''
       corner_radius 7
