@@ -6,7 +6,7 @@ _: {
       name = "JetBrainsMono Nerd Font";
     };
     settings = {
-      window_margin_width = 5;
+      window_margin_width = 9;
       tab_bar_min_tabs = 1;
       tab_bar_style = "powerline";
       tab_powerline_style = "slanted";
