@@ -2,5 +2,5 @@
 # You can build them using 'nix build .#example'
 pkgs: {
   # example = pkgs.callPackage ./example { };
-  package = (pkgs.callPackage ./rose-pine.nix {}).gtk-theme;
+  rose-pine-gtk = (pkgs.callPackage ./rose-pine.nix {}).gtk-theme;
 }

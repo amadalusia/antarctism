@@ -6,10 +6,13 @@
       package = pkgs.dosis;
       size = 11;
     };
-    theme = {};
+    theme = {
+      package = pkgs.rose-pine-gtk;
+      name = "RosePine-Main-BL";
+    };
     iconTheme = {
-      package = pkgs.rose-pine-icon-theme;
-      name = "rose-pine-icons";
+      package = pkgs.rose-pine-gtk;
+      name = "Rose-Pine";
     };
     cursorTheme = {
       package = pkgs.vanilla-dmz;

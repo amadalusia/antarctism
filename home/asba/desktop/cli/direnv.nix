@@ -8,7 +8,7 @@
     enableZshIntegration = true;
     nix-direnv = {
       enable = true;
-      inherit (inputs.nix-direnv.${pkgs.system}.nix-direnv) package;
+      package = inputs.nix-direnv.packages.${pkgs.system}.nix-direnv;
     };
   };
 }
