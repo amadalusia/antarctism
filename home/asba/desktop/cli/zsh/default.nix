@@ -15,5 +15,8 @@ _: {
         "zsh-users/zsh-history-substring-search"
       ];
     };
+    initExtra = ''
+      [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
+    '';
   };
 }
