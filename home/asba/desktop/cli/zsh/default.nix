@@ -9,8 +9,10 @@ _: {
     antidote = {
       enable = true;
       plugins = [
-        "romkatv/powerlevel10k"
+        "Aloxaf/fzf-tab"
         "zdharma-continuum/fast-syntax-highlighting"
+        "zsh-users/zsh-autosuggestions"
+        "zsh-users/zsh-history-substring-search"
       ];
     };
     initExtra = ''
