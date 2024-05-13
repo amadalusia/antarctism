@@ -1,8 +1,12 @@
 _: {
   programs.zsh = {
     shellAliases = {
-      "rebuild-and-test" = "sudo nixos-rebuild test --flake ~/.dotfiles#pluto";
-      "rebuild-and-switch" = "sudo nixos-rebuild switch --flake ~/.dotfiles#pluto";
+      "rbt" = "sudo nixos-rebuild test --flake ~/.dotfiles#pluto";
+      "rbs" = "sudo nixos-rebuild switch --flake ~/.dotfiles#pluto";
+      "nr" = "nix run";
+      "ns" = "nix shell";
+      "nd" = "nix develop";
+      "lg" = "lazygit";
     };
   };
 }

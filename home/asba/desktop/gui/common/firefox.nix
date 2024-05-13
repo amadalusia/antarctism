@@ -5,6 +5,7 @@
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         bitwarden
         firefox-color
+        ublock-origin
       ];
       settings = {
         "extensions.autoDisableScopes" = 0;

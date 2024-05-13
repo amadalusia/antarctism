@@ -37,6 +37,7 @@
         };
 
         startPlugins = [
+          "nui-nvim"
           "plenary-nvim"
         ];
 
@@ -60,7 +61,6 @@
           rust.enable = true;
           clang.enable = true;
           go.enable = true;
-          nix.enable = true;
           python.enable = true;
           lua.enable = true;
 
@@ -68,10 +68,21 @@
             enable = true;
             lsp.enable = true;
           };
+
+          nix = {
+            enable = true;
+            extraDiagnostics.enable = true;
+            format.enable = true;
+            lsp.enable = true;
+          };
         };
 
         notify.nvim-notify = {
           enable = true;
+        };
+
+        treesitter = {
+          fold = true;
         };
 
         theme = {

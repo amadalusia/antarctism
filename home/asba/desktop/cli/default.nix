@@ -1,6 +1,7 @@
 _: {
   imports = [
     ./zsh
-    ./eza
+    ./eza.nix
+    # ./direnv.nix
   ];
 }

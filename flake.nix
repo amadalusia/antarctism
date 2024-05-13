@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/nur";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+    # nix-direnv.url = "github:nix-community/nix-direnv";
 
     home-manager = {
       url = "github:nix-community/home-manager";
