@@ -27,6 +27,28 @@
           enable = true;
         };
 
+        visuals = {
+          enable = true;
+          nvimWebDevicons.enable = true;
+          smoothScroll.enable = true;
+          cellularAutomaton.enable = false;
+          fidget-nvim.enable = true;
+          highlight-undo.enable = true;
+
+          indentBlankline = {
+            enable = true;
+            fillChar = null;
+            eolChar = null;
+            scope = {
+              enabled = true;
+            };
+          };
+          cursorline = {
+            enable = true;
+            lineTimeout = 0;
+          };
+        };
+
         debugger.nvim-dap = {
           enable = true;
           ui.enable = true;
@@ -34,6 +56,12 @@
 
         ui = {
           noice.enable = true;
+          borders.enable = true;
+        };
+
+        autocomplete = {
+          enable = true;
+          type = "nvim-cmp";
         };
 
         startPlugins = [
@@ -77,6 +105,11 @@
           };
         };
 
+        statusline.lualine = {
+          enable = true;
+          theme = "auto";
+        };
+
         notify.nvim-notify = {
           enable = true;
         };
@@ -92,11 +125,7 @@
           transparent = false;
         };
 
-        visuals.cursorline = {
-          enable = true;
-          lineTimeout = 0;
-        };
-
+        visuals.
         filetree.nvimTree.enable = true;
         autopairs.enable = true;
       };

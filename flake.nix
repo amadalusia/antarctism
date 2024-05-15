@@ -4,8 +4,16 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/nur";
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-    nix-direnv.url = "github:nix-community/nix-direnv";
+
+    nix-direnv = {
+      url = "github:nix-community/nix-direnv";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -23,7 +31,7 @@
     };
 
     nvf = {
-      url = "github:notashelf/nvf";
+      url = "github:notashelf/nvf/lualine-refactor";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

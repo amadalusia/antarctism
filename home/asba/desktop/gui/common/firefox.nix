@@ -6,6 +6,9 @@
         bitwarden
         firefox-color
         ublock-origin
+        darkreader
+        decentraleyes
+        i-dont-care-about-cookies
       ];
       settings = {
         "extensions.autoDisableScopes" = 0;
