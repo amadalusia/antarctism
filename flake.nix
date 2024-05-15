@@ -31,7 +31,7 @@
     };
 
     nvf = {
-      url = "github:notashelf/nvf/lualine-refactor";
+      url = "github:notashelf/nvf/lualine-refactor#maximal";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
