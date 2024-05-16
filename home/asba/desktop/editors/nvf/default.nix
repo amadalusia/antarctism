@@ -32,8 +32,14 @@
           gitsigns.enable = true;
         };
 
+        telescope.enable = true;
+
         ui = {
           noice.enable = true;
+          borders = {
+            enable = true;
+            globalStyle = "rounded";
+          };
         };
 
         snippets.vsnip.enable = true;
@@ -55,7 +61,24 @@
           theme = "auto";
         };
 
+        utility.motion = {
+          hop.enable = true;
+          leap.enable = true;
+        };
+
         theme = {
+          extraConfig = ''
+            require("rose-pine").setup({
+            	highlight_groups = {
+            		TelescopeBorder = { fg = "highlight_high", bg = "none" },
+            		TelescopeNormal = { bg = "none" },
+            		TelescopePromptNormal = { bg = "base" },
+            		TelescopeResultsNormal = { fg = "subtle", bg = "none" },
+            		TelescopeSelection = { fg = "text", bg = "base" },
+            		TelescopeSelectionCaret = { fg = "rose", bg = "rose" },
+            	},
+            })
+          '';
           enable = true;
           name = "rose-pine";
           style = "main";
@@ -63,6 +86,12 @@
 
         tabline.nvimBufferline = {
           enable = true;
+        };
+
+        treesitter = {
+          enable = true;
+          context.enable = true;
+          highlight.enable = true;
         };
 
         languages = {
