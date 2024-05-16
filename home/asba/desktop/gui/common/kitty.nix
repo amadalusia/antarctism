@@ -11,6 +11,7 @@ _: {
       tab_bar_style = "powerline";
       tab_powerline_style = "slanted";
       tab_title_template = "{index}: {title}";
+      disable_ligatures = "always";
     };
     keybindings = {
       "alt+1" = "goto_tab 1";
