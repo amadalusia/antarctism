@@ -1,4 +1,8 @@
-{inputs, pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nvf.homeManagerModules.default
   ];
@@ -9,6 +13,9 @@
       vim = {
         package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
         autoIndent = true;
+
+        telescope.enable = true;
+        fileTree.nvimTree.enable = true;
 
         lsp = {
           enable = true;
@@ -24,6 +31,9 @@
         };
 
         visuals = {
+          enable = true;
+          smoothScroll.enable = true;
+          scrollBar.enable = true;
           nvimWebDevicons.enable = true;
         };
 
@@ -31,8 +41,6 @@
           enable = true;
           gitsigns.enable = true;
         };
-
-        telescope.enable = true;
 
         ui = {
           noice.enable = true;
@@ -49,7 +57,7 @@
           "plenary-nvim"
           "nui-nvim"
         ];
-        
+
         autocomplete = {
           enable = true;
           type = "nvim-cmp";
