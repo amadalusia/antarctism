@@ -57,6 +57,7 @@
     tomato-c
     fastfetch
     pavucontrol
+    tetrio-desktop
   ];
 
   # Enable home-manager and git
