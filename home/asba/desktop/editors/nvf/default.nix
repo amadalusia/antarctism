@@ -15,7 +15,7 @@
         autoIndent = true;
 
         telescope.enable = true;
-        fileTree.nvimTree.enable = true;
+        filetree.nvimTree.enable = true;
 
         lsp = {
           enable = true;
