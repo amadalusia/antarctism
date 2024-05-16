@@ -95,6 +95,11 @@
         };
 
         languages = {
+          enableLSP = true;
+          enableFormat = true;
+          enableTreesitter = true;
+          enableExtraDiagnostics = true;
+
           nix.enable = true;
           ts.enable = true;
           rust.enable = true;
