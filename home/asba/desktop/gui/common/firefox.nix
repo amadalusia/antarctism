@@ -12,6 +12,8 @@
       ];
       settings = {
         "extensions.autoDisableScopes" = 0;
+        "webgl.force-enabled" = true;
+        "webgl.disabled" = false;
       };
       bookmarks = [
         {
