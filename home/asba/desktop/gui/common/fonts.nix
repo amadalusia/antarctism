@@ -5,7 +5,7 @@
     dosis
     (nerdfonts.override {
       fonts = [
-        "Recursive"
+        "SourceCodePro"
         "JetBrainsMono"
         "NerdFontsSymbolsOnly"
       ];
