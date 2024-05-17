@@ -20,6 +20,7 @@
     ./desktop/cli
     ./desktop/editors
     ./desktop/gui/sway
+    ./desktop/games
   ];
 
   # nixpkgs = {
