@@ -23,7 +23,7 @@
   in {
     config = {
       defaultWorkspace = "workspace number 1";
-      terminal = "${config.programs.kitty.package}/bin/kitty --single-instance";
+      terminal = "${config.programs.kitty.package}/bin/kitty --single-instance --title \"kitty\"";
       menu = "${config.programs.rofi.package}/bin/rofi -show drun";
       modifier = "Mod4";
       startup = [
