@@ -16,8 +16,6 @@ _: {
       ];
     };
     initExtra = ''
-      [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
-
       ${builtins.readFile ./functions.zsh}
     '';
   };
