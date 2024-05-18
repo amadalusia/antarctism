@@ -20,6 +20,7 @@
 > This recollection isn't at all done, maybe soon :)
 
 [home/asba](https://github.com/balkenix/antarctism/home/asba) - my home-manager config
+
 [hosts/pluto](https://github.com/balkenix/antarctism/hosts/pluto) - my nixos config (HP EliteBook 840 G3)
 
 ---
