@@ -62,7 +62,7 @@
       tetrio-desktop
     ]
     ++ [
-      inputs.norfetch.packages.${pkgs.system}.default
+      inputs.norfetch.packages.${pkgs.system}.norfetch
     ];
 
   # Enable home-manager and git
