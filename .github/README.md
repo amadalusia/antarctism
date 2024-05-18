@@ -1,5 +1,7 @@
 ### antarctism 🐧
 
+![rice](.github/assets/screenshot.png)
+
 ---
 
 ###### welcome to my dotfiles, made with the assisted efforts or reading documentation... or stealing.
