@@ -26,12 +26,17 @@
     };
 
     swayfx = {
-      url = "github:balkenix/swayfx";
+      url = "github:willpower3309/swayfx";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nvf = {
       url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    norfetch = {
+      url = "github:balkenix/norfetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

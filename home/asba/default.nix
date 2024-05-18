@@ -54,12 +54,14 @@
   };
 
   # Add stuff for your user as you see fit:
-  home.packages = with pkgs; [
-    tomato-c
-    fastfetch
-    pavucontrol
-    tetrio-desktop
-  ];
+  home.packages = with pkgs;
+    [
+      tomato-c
+      fastfetch
+      pavucontrol
+      tetrio-desktop
+    ]
+    ++ inputs.norfetch.packages.${pkgs.system}.default;
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
