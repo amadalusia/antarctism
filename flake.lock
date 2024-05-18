@@ -474,11 +474,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716025905,
-        "narHash": "sha256-48Ya9j8LqfUaFBty3q8t8zsf4i6j7i3N5r6E0FRQUDM=",
+        "lastModified": 1716026402,
+        "narHash": "sha256-PGKUPJn9Jqi7vixAmZu0thqdc1t/LuSsUNo6zMQM4gs=",
         "owner": "balkenix",
         "repo": "norfetch",
-        "rev": "9dfa16532925b6655aafeffd2c49fbf1d721b581",
+        "rev": "19c5ec62bc437882a375fc75c60edb3bcd6ed7fc",
         "type": "github"
       },
       "original": {
