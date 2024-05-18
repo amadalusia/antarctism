@@ -1,6 +1,6 @@
 ### antarctism 🐧
 
-![rice](.github/assets/screenshot.png)
+![rice](assets/screenshot.png)
 
 ---
 
