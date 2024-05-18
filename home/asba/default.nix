@@ -61,7 +61,9 @@
       pavucontrol
       tetrio-desktop
     ]
-    ++ inputs.norfetch.packages.${pkgs.system}.default;
+    ++ [
+      inputs.norfetch.packages.${pkgs.system}.default
+    ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
