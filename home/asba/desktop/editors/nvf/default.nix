@@ -30,6 +30,8 @@
           nvimCodeActionMenu.enable = true;
         };
 
+        autopairs.enable = true;
+
         visuals = {
           enable = true;
           smoothScroll.enable = true;
