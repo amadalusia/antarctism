@@ -12,9 +12,9 @@
 
 ### navigation
 
-{::comment}
+<!---
 [](https://github.com/balkenix/antarctism/)
-{:/comment}
+--->
 
 > [!IMPORTANT]
 > This recollection isn't at all done, maybe soon :)
